@@ -1,14 +1,15 @@
 :root {
   --primary-font: 'Open Sans', sans-serif;
   --secondary-font: 'Poppins', sans-serif;
-  --primary-color: #5fd387;
-  --primary-color-transparent: rgba(95, 211, 135, .25);
-  --secondary-color: #ffffff;
+  --primary-color: #43516C;
+  --primary-color-transparent: rgba(67, 81, 108, .25);
+  --secondary-color: #786C49;
   --danger: #ff0062;
   --dark-grey: #333333;
+  --white: #fff;
   --shadow: 3px 3px 10px #ddd;
   --space: 30px;
-  --accent-color-transparent: rgba(0,0,0,0.81);
+  --accent-color-transparent: rgba(0,0,0,0.41);
   --gradient-transparent: linear-gradient(180deg,var(--accent-color-transparent) 51%,var(--accent-color-transparent));
 }
 
@@ -18,7 +19,7 @@ body {
   background-image: var(--gradient-transparent),url(/background.png);
   background-size: cover;
   background-repeat: repeat;
-  color: #232323;
+  color: var(--white);
   margin: 8px 4px 0 4px;
   padding-bottom: 120px;
 }
@@ -53,6 +54,29 @@ a:hover a:active {
   border-color: var(--primary-color);
   outline: 0;
   box-shadow: 0 0 0 0.2rem var(--primary-color-transparent);
+}
+
+.footer {
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  position: fixed;
+  color: black;
+  background-color: white;
+  padding: 20px 0;
+}
+
+.footerbtns {
+  text-align: right;
+  float: right;
+  margin-right: 5%;
+}
+
+.footertext {
+  font-size: 18px;
+  float: left;
+  margin-left: 5%;
 }
 
 @media (max-width: 1024px) {
@@ -110,41 +134,13 @@ li {
   color: white;
 }
 
-.footer {
-  display: inline-block;
-  text-align: left;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  position: fixed;
-  color: black;
-  background-color: white;
-  padding: 20px 0;
-}
-
-.footerbtns {
-  text-align: right;
-  float: right;
-  margin-right: 5%;
-}
-
-.footertext {
-  font-size: 18px;
-  float: left;
-  margin-left: 5%;
-}
-
 @media (max-width: 767px) {
-  body {
-    background-repeat: no-repeat;
-  }
-
   .footer {
     text-align: center;
     padding-bottom: 0;
     margin-bottom: 0;
     position: fixed;
     color: black;
-    background-color: #34d186;
     padding: 5% 0;
   }
   
