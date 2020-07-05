@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "lyrics-around-the-wurld",
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

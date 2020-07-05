@@ -21,7 +21,7 @@ export default function Questions() {
       },
       body: JSON.stringify({
         user_identifier: Date.now().toString(),
-        form_id: 4
+        form_id: 6
       })
     })
       .then(res => res.json())
@@ -29,7 +29,7 @@ export default function Questions() {
         setResponseId(data.data.id)
       })
       
-    fetch('https://app.trivyeah-backend.wtxtra.agency/api/v1/forms/view?id=4')
+    fetch('https://app.trivyeah-backend.wtxtra.agency/api/v1/forms/view?id=6')
       .then(res => res.json())
       .then(data => {
         let questions = data.data.sections[0].questions
